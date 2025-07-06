@@ -1,0 +1,715 @@
+#searchidM {display: none;}
+#searchidD {display: inline-block;}
+@media screen and (max-width: 990px) {
+#searchidD {display: none;}
+#searchidM {display: inline-block;}
+.navbar { width: 100%; }
+
+#topbar { min-height: 0px; height: 0px; }
+.bannerStyle { width: 1600px;}
+
+}
+Accessibility Tools
+×
+Contrast +
+Invert Colors
+Light Contrast
+Dark Contrast
+Desaturate
+Bigger Font
+Font large
+Font x-large
+Font xx-large
+Cursor
+Big Cursor
+Reading Mask
+Reading Ruler
+Highlight Link
+Highlight Link
+Text Spacing
+Light Space
+Medium Space
+Heavy Space
+Friendly Font
+Dyslexia Font
+Legible Font
+Line Height
+Line Height 1.5x
+Line Height 2.0x
+Line Height 2.5x
+Text Align
+Right Align
+Center Align
+Left Align
+Justify Align
+Toggle Videos
+Pause Videos
+Toggle Tooltips
+Show Tooltips
+Reset
+Reload
+function goToOtherLanguage(){
+      var currentUrl = window.location.href;
+      var targetUrl="";
+      if (!currentUrl.includes("ISRO_HINDI")){ //It is an English page
+          if (currentUrl.includes("/ISRO_EN/")){
+            targetUrl = currentUrl.replace("ISRO_EN","ISRO_HINDI");
+          }else if (currentUrl.includes("/ISRO_DEP/")){
+            targetUrl = currentUrl.replace("ISRO_DEP","ISRO_HINDI_DEP");
+          }else if (!currentUrl.includes(".html")){ 
+            //it's the index page in English e.g. https://www.isro.gov.in
+            targetUrl = currentUrl+"/ISRO_HINDI";
+          }else{
+            //there is .html e.g. https://www.isro.gov.in/xyz.html
+            var lastSlashIndex = currentUrl.lastIndexOf("/");
+            var substr1 = currentUrl.substring(0,lastSlashIndex+1);
+            var substr2 = currentUrl.substring(lastSlashIndex+1,currentUrl.length);
+            targetUrl = substr1+"ISRO_HINDI/"+substr2;
+          }
+      }else {
+        if (currentUrl.includes("/ISRO_HINDI/"))
+          targetUrl = currentUrl.replace("ISRO_HINDI","ISRO_EN");
+          else if (currentUrl.includes("/ISRO_HINDI_DEP/"))
+          targetUrl = currentUrl.replace("ISRO_HINDI_DEP","ISRO_DEP");
+        }
+        window.location.assign(targetUrl);
+        return false;
+      }
+    function renderTimelineBackBtn(){
+      var currentUrl = window.location.href;
+      if (currentUrl.includes("?timeline=timeline"))
+        document.getElementById("timeLineBackBtn").style.visibility='visible';
+      if(window.innerWidth < 991 ){
+        document.getElementById("navbar").classList.remove('navbar');
+        document.getElementById("navbar").classList.add('navbar');
+        document.getElementById("menu").classList.remove('navbar');
+        document.getElementById("menu").classList.remove('navbar1');
+      }else{
+        document.getElementById("navbar").classList.remove('navbar');
+        document.getElementById("menu").classList.remove('navbar');
+        document.getElementById("menu").classList.add('navbar');
+        document.getElementById("menu").classList.add('navbar1');
+      }
+      document.getElementById("searchTextM").addEventListener('keyup', function onEvent(e) {
+        if (e.keyCode === 13) 
+       { 
+       searchTextM();
+        }
+       });
+       
+       document.getElementById("searchTextD").addEventListener('keyup', function onEvent(e) {
+        if (e.keyCode === 13) 
+       {
+       searchTextD(); 
+       }
+       });
+    }
+    function menuResize(){
+      if(window.innerWidth < 991 ){
+        document.getElementById("navbar").classList.remove('navbar');
+        document.getElementById("navbar").classList.add('navbar');
+        document.getElementById("menu").classList.remove('navbar');
+        document.getElementById("menu").classList.remove('navbar1');
+        document.getElementById("dotsID").style.display = "block";
+//07012025
+        if(document.getElementById("mobileNavToggleISRO").classList.contains("bi-x"))
+        {
+          document.getElementById("dotsID").style.display = "none";
+          document.getElementById("searchidM").style.display = "none";
+        }
+        else if(document.getElementById("mobileNavToggleISRO").classList.contains("bi-list"))
+        {
+          document.getElementById("searchidM").style.display = "block";
+        }
+  //07012025 end
+      }else{
+        document.getElementById("navbar").classList.remove('navbar');
+        document.getElementById("menu").classList.remove('navbar');
+        document.getElementById("menu").classList.add('navbar');
+        document.getElementById("menu").classList.add('navbar1');
+       document.getElementById("dotsID").style.display = "none";
+       document.getElementById("searchidM").style.display = "none";   //070125
+      }
+    }
+function searchTextM() {
+var searchtextM = document.getElementById("searchTextM").value;
+//alert(searchtext);
+if(searchtextM == "") {
+document.getElementById("searchTextM").style.background = "#ffc9c9";
+document.getElementById("searchTextM").placeholder = "Enter Keyword";
+} else {
+location.href = 'search.html#gsc.q='+searchtextM;
+} }
+
+function searchTextD() {
+var searchtextD = document.getElementById("searchTextD").value;
+//alert(searchtext);
+if(searchtextD == "") {
+document.getElementById("searchTextD").style.background = "#ffc9c9";
+document.getElementById("searchTextD").placeholder = "Enter Keyword";
+} else {
+document.getElementById("searchTextD").style.border = "none";
+location.href = 'search.html#gsc.q='+searchtextD;
+} }
+English
+|
+हिंदी
+|
+Sitemap
+|
+Contact us
+|
+Feedback
+|
+RTI
+|
+Career
+|
+Tender
+|
+FAQ
+A+
+A
+A-
+Skip to main content
+English
+हिंदी
+Sitemap
+Contact us
+Feedback
+RTI
+Career
+Tender
+FAQ
+A+
+A
+A-
+Skip to main
+Home
+About
+Profile
+Vision-Mission-Objectives
+Citizen charter
+Organisational structure
+DoS Centers/units/enterprises
+Secretary, DoS/ Chairman, ISRO
+Former Secretaries/Chairmen
+Space Commission
+Autonomous bodies
+Genesis
+Timeline
+Who's who
+Contact us
+Activities
+Missions accomplished
+Upcoming Missions
+Science
+Launchers
+Satellites
+Space Applications
+Research & Development
+Gaganyaan
+Ground Segment activities
+Promotion & Authorisation
+International co-operation
+Capacity building
+Training
+Outreach
+Services
+Launch service
+Satellite: system, bus, sub-system, testing
+Mission support
+Ground systems support
+Satellite Communication & Lease of transponders
+Space based Earth observation: Bhuvan & Bhoonidhi
+Satellite Navigation services
+Meteorological & Oceanographic Satellite Data
+Disaster Management: National & International
+Aerial Services & Digital Mapping
+North-East India region specific applications Services
+VEDAS services
+Transfer Orbit Service
+Satellite aided search & rescue
+Programmes
+Academic courses
+Conference Grants
+Fellowships
+Space merchandise
+Space Tutor
+Space on wheels
+Student Satellite
+Technology Transfer
+UNNATI
+YUVIKA
+Resources
+Atlases: River basin
+Bhuvan
+Database for Emergency Management
+FEAST Tool
+I-grasp
+Info for Climate & Enviroment studies
+Landslide Atlas of India
+Meteorology & Oceanographic data
+Mobile Apps
+Monthly Summary of DOS
+MOSDAC
+NAVIC Time
+Publications
+School Bhuvan - NCERT
+Science Data
+Engagements
+Academia
+Ask an expert
+Educators
+Industry
+Internship & Projects
+Join ISRO
+Media
+Researchers
+Start-ups
+Students
+Training
+Visitors
+
+Flash News:
+Successful Launch of Axiom Mission 4 (Ax-04) with Indian Astronaut and Ax-04 Mission Pilot Shubhanshu Shukla Onboard SpaceX's Dragon Crew Module
+Flash News:
+Watch the ISRO-NASA joint mission to the ISS live on June 25, 2025
+Flash News:
+NASA Provides Latest Axiom Mission 4 Launch, Station Operations Update
+Flash News:
+AX-04 Mission Update Press Brief 14
+th
+June 2025
+Flash News:
+AX-04 Mission Update Press Brief 13
+th
+June 2025
+Flash News:
+Research Areas in Space document - 2025 - Released
+Flash News:
+PSLV-C61 Launch Update
+Flash News:
+Updates on Gaganyaan, Space Docking Technology and GLEX2025
+Flash News:
+SPADEX Mission: Successful demonstration of Second Docking and Power Transfer
+Flash News:
+Our Instagram
+isro.dos
+NSpD-2024
+Contact us
+Ask an Expert
+Feedback
+Press Release
+Press Release
+More Info.
+Careers
+Come, become a part of the workforce of the nation's prestigious space agency-be it in the technical
+                    or administrative areas? ISRO has several openings for recruitment to a plethora of posts. All
+                    recruitment notices will be published here.
+More Info.
+Students
+ISRO committed to encourage students in creating awareness in the space technology and
+                    applications.They are the future hopes for applying technologies for social and economic up-liftment
+                    of the country.Several programmes are conceived for students to engage in STEM activities and
+                    learning.
+More Info.
+Tenders
+This is a portal that carries all notifications related to tenders, corrigendums etc.for procurement
+                    related activities of all ISRO Centres spread across the country. It will be a frequently updated
+                    portal.
+More Info.
+Latest News
+ISRO conducts student interactions with Gaganyatri onboard ISS
+ISRO conducts student interactions with Gaganyatri onboard ISS
+Update on Microgravity Research Experiments onboard the International Space Station
+Update on Microgravity Research Experiments onboard the International Space Station
+ISRO Announces National Space Science Symposium 2026 (NSSS-2026)
+ISRO Announces National Space Science Symposium 2026 (NSSS-2026)
+Successful Launch of Axiom Mission 4 (Ax-04) with Indian Astronaut and Ax-04 Mission Pilot Shubhanshu Shukla Onboard SpaceX's Dragon Crew Module
+Successful Launch of Axiom Mission 4 (Ax-04) with Indian Astronaut and Ax-04 Mission Pilot Shubhanshu Shukla Onboard SpaceX's Dragon Crew Module
+Successful Completion of Health-QUEST Programme: Space Technology Aiding Emergency Healthcare Improvement
+Successful Completion of Health-QUEST Programme: Space Technology Aiding Emergency Healthcare Improvement
+Launching of Bharatiya Antariksh Hackathon-2025
+Launching of Bharatiya Antariksh Hackathon-2025
+AX-04 Mission Update Press Brief 14th June 2025
+AX-04 Mission Update Press Brief 14
+th
+June 2025
+AX-04 Mission Update Press Brief 13th June 2025
+AX-04 Mission Update Press Brief 13
+th
+June 2025
+NRSC ISRO and SVPUAT Sign MOU for Joint Collaboration for Research,  Academic Interface and Outreach Activities
+NRSC ISRO and SVPUAT Sign MOU for Joint Collaboration for Research,  Academic Interface and Outreach Activities
+NRSC/ISRO and IISc Join Hands for Research to Assess CO2 Source /  Sinks and Predicting Extreme Rainfall Events
+NRSC/ISRO and IISc Join Hands for Research to Assess CO2 Source /  Sinks and Predicting Extreme Rainfall Events
+MoU Signed Between NRSC, Hyderabad and NIAS, Bengaluru
+MoU Signed Between NRSC, Hyderabad and NIAS, Bengaluru
+Workshop on “Harnessing Space-Based Earth Observation and GIS Technologies for Disaster Risk Management”
+Workshop on “Harnessing Space-Based Earth Observation and GIS Technologies for Disaster Risk Management”
+Successful third Hot Test of Semi-Cryogenic Engine Power Head Test Article
+Successful third Hot Test of Semi-Cryogenic Engine Power Head Test Article
+ISRO Academia Connect Workshop & Inauguration of Space Technology Incubation Centre (STIC) Facility for Central Region and Release of “Research Areas in Space – 2025”
+ISRO Academia Connect Workshop & Inauguration of Space Technology Incubation Centre (STIC) Facility for Central Region and Release of “Research Areas in Space – 2025”
+NISAR Awareness Workshop (April 29, 2025) for Indian Non-Governmental Entities (NGEi) 
+                    Space Applications Centre, Ahmedabad
+NISAR Awareness Workshop (April 29, 2025) for Indian Non-Governmental Entities (NGEi) 
+                    Space Applications Centre, Ahmedabad
+Indian Space Situational Assessment Report (ISSAR) for 2024 Released
+Indian Space Situational Assessment Report (ISSAR) for 2024 Released
+ISRO and TIFR Hold Collaboration Meet on Space Science and Astronomy
+ISRO and TIFR Hold Collaboration Meet on Space Science and Astronomy
+A National Space Science meeting- SAMHITA (SAC Astronomy Microgravity Heliophysics Ionosphere vaarTA) was organized by SAC (ISRO), Ahmedabad
+A National Space Science meeting- SAMHITA (SAC Astronomy Microgravity Heliophysics Ionosphere vaarTA) was organized by SAC (ISRO), Ahmedabad
+ISRO and JAXA Gear Up for Joint Chandrayaan-5 / LUPEX Mission in the Technical Interface Meet
+ISRO and JAXA Gear Up for Joint Chandrayaan-5 / LUPEX Mission in the Technical Interface Meet
+Solar Ultraviolet Imaging Telescope (SUIT) onboard Aditya-L1 Mission Observed Powerful Solar Flare and a First-of-Its-Kind Observation of Rare Plasma Ejection in Ultra-violet Light
+Solar Ultraviolet Imaging Telescope (SUIT) onboard Aditya-L1 Mission Observed Powerful Solar Flare and a First-of-Its-Kind Observation of Rare Plasma Ejection in Ultra-violet Light
+Updates on Gaganyaan, Space Docking Technology and GLEX2025
+Updates on Gaganyaan, Space Docking Technology and GLEX2025
+North East Students' Programme for Awareness, Reach, and Knowledge on Space (NE-SPARKS) Program
+North East Students' Programme for Awareness, Reach, and Knowledge on Space (NE-SPARKS) Program
+MOSDAC-IN: A dedicated web portal hosting satellite based products for Indian Navy, developed by ISRO’s Space Applications Center
+MOSDAC-IN: A dedicated web portal hosting satellite based products for Indian Navy, developed by ISRO’s Space Applications Center
+Primitive mantle material revealed by Chandrayaan-3 APXS volatile measurements in the South Polar Region of the Moon
+Primitive mantle material revealed by Chandrayaan-3 APXS volatile measurements in the South Polar Region of the Moon
+Indian Microgravity Research Portfolio in upcoming Axiom-4 Mission
+Indian Microgravity Research Portfolio in upcoming Axiom-4 Mission
+ISRO successfully conducted a short duration hot test of Semicryogenic Engine
+ISRO successfully conducted a short duration hot test of Semicryogenic Engine
+GSLV Second Stage (GS2) flagged off to Sriharikota for GSLV-F16/ NISAR Mission
+GSLV Second Stage (GS2) flagged off to Sriharikota for GSLV-F16/ NISAR Mission
+Indian Space Research Organisation (ISRO), Department of Space (DoS) and  Sree Chitra Tirunal Institute for Medical Sciences & Technology, Department of Science & Technology signs Framework Memorandum of Understanding on Cooperation in Space Medicine
+Indian Space Research Organisation (ISRO), Department of Space (DoS) and  Sree Chitra Tirunal Institute for Medical Sciences & Technology, Department of Science & Technology signs Framework Memorandum of Understanding on Cooperation in Space Medicine
+ISRO takes up the Lead Role of "International Charter Space and Major Disasters" for six months from April 2025
+ISRO takes up the Lead Role of "International Charter Space and Major Disasters" for six months from April 2025
+ISRO organises the National Science Meet on Chandrayaan-4 Lunar  Sample Return Mission
+ISRO organises the National Science Meet on Chandrayaan-4 Lunar  Sample Return Mission
+Signing of the MoU between NRSC and HYDRAA: EO based Geospatial data  support for Disaster management and Water Resource Protection
+Signing of the MoU between NRSC and HYDRAA: EO based Geospatial data  support for Disaster management and Water Resource Protection
+SPADEX Mission: Successful demonstration of Second Docking and Power Transfer
+SPADEX Mission: Successful demonstration of Second Docking and Power Transfer
+Second Selection List for YUVIKA 2025
+Second Selection List for YUVIKA 2025
+106 KB
+Wheat Crop Area and Production Estimation in India: A Pilot on Framework Development
+Wheat Crop Area and Production Estimation in India: A Pilot on Framework Development
+ISRO Successfully qualifies fourth stage engine of PSLV with Stellite Nozzle Divergent
+ISRO Successfully qualifies fourth stage engine of PSLV with Stellite Nozzle Divergent
+Commencement of ISRO Academia Connect Programme at NIT Kurukshetra for Northern Region
+Commencement of ISRO Academia Connect Programme at NIT Kurukshetra for Northern Region
+ISRO Commissions Advanced Landing Gear Test Facility
+ISRO Commissions Advanced Landing Gear Test Facility
+Selection List for YUVIKA 2025
+Selection List for YUVIKA 2025
+177 KB
+Atmospheric Re-entry of POEM-4
+Atmospheric Re-entry of POEM-4
+NATIONAL LEVEL USER INTERACTION MEET 2025 AT NRSC
+NATIONAL LEVEL USER INTERACTION MEET 2025 AT NRSC
+Ocean Colour Monotor-3(OCM-3) Satellite Imagery and Vegetation Dynamics: Unveiling Global Patterns
+Ocean Colour Monotor-3(OCM-3) Satellite Imagery and Vegetation Dynamics: Unveiling Global Patterns
+Leveraging Indian National Satellite System (INSAT) Geostationary Satellite for advanced lightning detection and analysis
+Leveraging Indian National Satellite System (INSAT) Geostationary Satellite for advanced lightning detection and analysis
+ISRO's Cartosat-3 image shows damage caused by the Earthquake in Myanmar on 28 Mar 2025
+ISRO's Cartosat-3 image shows damage caused by the Earthquake in Myanmar on 28 Mar 2025
+Space Applications Centre (SAC)-ISRO in Association with IN-SPACe and NSIL to Organize a One-Day NISAR Awareness Workshop for Indian Non-Governmental Entities (NGEi) at Ahmedabad, on 29 April 2025
+Space Applications Centre (SAC)-ISRO in Association with IN-SPACe and NSIL to Organize a One-Day NISAR Awareness Workshop for Indian Non-Governmental Entities (NGEi) at Ahmedabad, on 29 April 2025
+Rashtriya Karmayogi- Jan Seva Programme in Department of Space
+Rashtriya Karmayogi- Jan Seva Programme in Department of Space
+ISRO achieves major breakthrough in Semicryogenic Engine development
+ISRO achieves major breakthrough in Semicryogenic Engine development
+ISRO successfully completes 1000hrs Life Test of Stationary Plasma Thruster for Spacecraft Electric Propulsion System
+ISRO successfully completes 1000hrs Life Test of Stationary Plasma Thruster for Spacecraft Electric Propulsion System
+IIRS Academia Meet (IAM-2025) organized at IIRS on March 21, 2025
+IIRS Academia Meet (IAM-2025) organized at IIRS on March 21, 2025
+Inauguration of Space Technology Incubation Centre (STIC) Facility at NIT, Rourkela by Secretary, DOS / Chairman, ISRO
+Inauguration of Space Technology Incubation Centre (STIC) Facility at NIT, Rourkela by Secretary, DOS / Chairman, ISRO
+Visit of Minister of Foreign Affairs, Latvia to Antariksh Bhavan
+Visit of Minister of Foreign Affairs, Latvia to Antariksh Bhavan
+ASEAN Food Security Information System (AFSIS) Appreciates ISRO
+ASEAN Food Security Information System (AFSIS) Appreciates ISRO
+Secretary, DoS/Chairman, ISRO Interaction with various Secretaries of Ministries/Departments on current utility of space technology and future Direction
+Secretary, DoS/Chairman, ISRO Interaction with various Secretaries of Ministries/Departments on current utility of space technology and future Direction
+Italian Ambassador met Chairman, ISRO/ Secretary, DOS
+Italian Ambassador met Chairman, ISRO/ Secretary, DOS
+Inauguration of Centre of Excellence at IIT Madras
+Inauguration of Centre of Excellence at IIT Madras
+Prediction of Equatorial Plasma Bubble Formation
+Prediction of Equatorial Plasma Bubble Formation
+Cryogenic Upper Stage (C25) for LVM3 flagged off to Sriharikota
+Cryogenic Upper Stage (C25) for LVM3 flagged off to Sriharikota
+ISRO & SCL develops 32-bit Microprocessors for space applications
+ISRO & SCL develops 32-bit Microprocessors for space applications
+ISRO successfully conducted the flight acceptance hot test of CE20 Cryogenic Engine for LVM3-M6 Mission
+ISRO successfully conducted the flight acceptance hot test of CE20 Cryogenic Engine for LVM3-M6 Mission
+India Bags the Credit for First-Ever In-Situ Measurement of the Topmost Fluffy Layer of the Moon’s Surface at Southern Higher Latitudes: New Insight about Harbouring Water-ice on the Moon
+India Bags the Credit for First-Ever In-Situ Measurement of the Topmost Fluffy Layer of the Moon’s Surface at Southern Higher Latitudes: New Insight about Harbouring Water-ice on the Moon
+SPADEX UNDOCKING SUCCESSFUL
+SPADEX UNDOCKING SUCCESSFUL
+Commencement of the construction of SSLV Launch Complex at Kulasekarapattinam, Tamil Nadu
+Commencement of the construction of SSLV Launch Complex at Kulasekarapattinam, Tamil Nadu
+POEM Completed 1000 Orbits in Space
+POEM Completed 1000 Orbits in Space
+Multiple restarts of Launch Vehicle Stages -  ISRO successfully carried out ignition trial using Spark Torch Igniter
+Multiple restarts of Launch Vehicle Stages -  ISRO successfully carried out ignition trial using Spark Torch Igniter
+Chandrayaan-2 unveils the effect of the Earth’s geomagnetic tail on the Lunar ionosphere plasma
+Chandrayaan-2 unveils the effect of the Earth’s geomagnetic tail on the Lunar ionosphere plasma
+Historic First: India’s Solar Ultra-violet Imaging Telescope (SUIT) onboard Aditya-L1 Captures Unprecedented Solar Flare Details
+Historic First: India’s Solar Ultra-violet Imaging Telescope (SUIT) onboard Aditya-L1 Captures Unprecedented Solar Flare Details
+Release of the Second Set of Aditya-L1 Science Data
+Release of the Second Set of Aditya-L1 Science Data
+Development & Realisation of 10 ton Propellant Mixer for Solid motors of ISRO
+Development & Realisation of 10 ton Propellant Mixer for Solid motors of ISRO
+PRL Scientists Discovered a Dense Sub-Saturn Using PARAS-2 Spectrograph at Mt Abu Telescope
+PRL Scientists Discovered a Dense Sub-Saturn Using PARAS-2 Spectrograph at Mt Abu Telescope
+The Charge D'Affaires, Embassy of USA to India met Chairman, ISRO/ Secretary, DOS
+The Charge D'Affaires, Embassy of USA to India met Chairman, ISRO/ Secretary, DOS
+Russian Ambassador met Chairman, ISRO/Secretary, DOS
+Russian Ambassador met Chairman, ISRO/Secretary, DOS
+Successful accomplishment of joint ISRO-ESA Radio Frequency Compatibility Tests (RFCT) for Gaganyaan Missions
+Successful accomplishment of joint ISRO-ESA Radio Frequency Compatibility Tests (RFCT) for Gaganyaan Missions
+Preparing for inflight re-ignition – Vacuum ignition trial of Cryogenic engine with Multi-element Igniter conducted successfully
+Preparing for inflight re-ignition – Vacuum ignition trial of Cryogenic engine with Multi-element Igniter conducted successfully
+Liquid Propulsion Systems integrated on Crew Module for first uncrewed mission of Gaganyaan (G1)
+Liquid Propulsion Systems integrated on Crew Module for first uncrewed mission of Gaganyaan (G1)
+ISRO successfully completed docking of two SPADEX satellites (SDX-01 & SDX-02) in the early hours of 16 January, 2025.
+ISRO successfully completed docking of two SPADEX satellites (SDX-01 & SDX-02) in the early hours of 16 January, 2025.
+Core Liquid stage for LVM3 flagged off to Sriharikota
+Core Liquid stage for LVM3 flagged off to Sriharikota
+ISRO demonstrates restart of Vikas engine
+ISRO demonstrates restart of Vikas engine
+Cabinet approves the establishment of “Third Launch Pad”
+Cabinet approves the establishment of “Third Launch Pad”
+Dr. V. Narayanan Assumed Charge of Secretary, Department of Space and Chairman, Space Commission
+Dr. V. Narayanan Assumed Charge of Secretary, Department of Space and Chairman, Space Commission
+Chairman, ISRO / Secretary, DOS Inaugurated START-2025 Event
+Chairman, ISRO / Secretary, DOS Inaugurated START-2025 Event
+CROPS: A Leap in Space Biological Experiments
+CROPS: A Leap in Space Biological Experiments
+ISRO Organises National Meet on Aditya L1 Data Release and Payload Performance Appraisal
+ISRO Organises National Meet on Aditya L1 Data Release and Payload Performance Appraisal
+PSLV C60/SPADEX Mission : SpaDeX Deployed! Successful separation of SpaDeX satellites marks another milestone in India's space journey
+PSLV C60/SPADEX Mission : SpaDeX Deployed! Successful separation of SpaDeX satellites marks another milestone in India's space journey
+POEM-4 in PSLV-C60 / SpaDeX Mission
+POEM-4 in PSLV-C60 / SpaDeX Mission
+Memorandum of Understanding between Indian Navy and NARL
+Memorandum of Understanding between Indian Navy and NARL
+Hon'ble Union Home Minister Highlights Space Technology as Catalyst for NE Region's Development at 12th NESAC
+        Society Meeting in Agartala
+Hon'ble Union Home Minister Highlights Space Technology as Catalyst for NE Region's Development at 12th NESAC
+        Society Meeting in Agartala
+SpaDeX: India's Pioneering Space Docking Demonstrator for Future Space Exploration
+SpaDeX: India's Pioneering Space Docking Demonstrator for Future Space Exploration
+ISRO-ESA Agreement for Cooperation on Activities related to Astronaut Training, Mission Implementation and Research Experiments
+ISRO-ESA Agreement for Cooperation on Activities related to Astronaut Training, Mission Implementation and Research Experiments
+Gaganyaan-G1 Launch campaign commences: Human Rated LVM3 assembly starts at SDSC for the first un-crewed flight
+Gaganyaan-G1 Launch campaign commences: Human Rated LVM3 assembly starts at SDSC for the first un-crewed flight
+Charting the Shadows of Time:Sundial at VSSC Space Museum
+Charting the Shadows of Time:Sundial at VSSC Space Museum
+ISRO & IN-SPACe organize Workshop on Spin-Off Space Technologies for  Automotive Industry
+ISRO & IN-SPACe organize Workshop on Spin-Off Space Technologies for  Automotive Industry
+Preparing for inflight re-ignition, full nozzle cryogenic engine (CE20) undergoes test outside vacuum chamber.
+Preparing for inflight re-ignition, full nozzle cryogenic engine (CE20) undergoes test outside vacuum chamber.
+Unlocking the Mysteries of the Sun: Aditya-L1's Observations of a Coronal Mass Ejection
+Unlocking the Mysteries of the Sun: Aditya-L1's Observations of a Coronal Mass Ejection
+Indian Navy and ISRO gear up for Welldeck Recovery for Gaganyaan
+Indian Navy and ISRO gear up for Welldeck Recovery for Gaganyaan
+The PSLV-C59/PROBA-3 Mission has successfully achieved its launch objectives, deploying ESA’s satellites into their designated orbit with precision.
+The PSLV-C59/PROBA-3 Mission has successfully achieved its launch objectives, deploying ESA’s satellites into their designated orbit with precision.
+ISRO - ESA Signs Technical Implementing Plan for Network Operation Support for Gaganyaan Missions
+ISRO - ESA Signs Technical Implementing Plan for Network Operation Support for Gaganyaan Missions
+Highlights
+Previous
+Next
+ISRO Portals
+I-Grasp
+ISRO's Grant In Aid Space Research Programmes
+ISRO STEM
+ISRO Science Technology Engineering & Mathematics Programme
+SPARK
+ISRO Virtual Space Museum
+MOSDAC
+Meteorological & Oceanographic Satellite Data Archival Centre
+ISSDC
+Indian Space Science Data Center
+Bhoonidhi
+Earth Observation Data Hub
+Bhuvan
+Indian Geo-Platform of ISRO
+VEDAS
+Visualisation of Earth Observation Data and Archival System
+NDEM
+National Database for Emergency Management
+Recent Updates
+PSLV-C61 / EOS-09 Mission
+Launched on: May 18, 2025
+More on  PSLV-C61 / EOS-09 Mission
+GSLV-F15 / NVS-02 MISSION
+Launched on: January 29, 2025
+More on GSLV-F15 / NVS-02
+PSLV C60/SPADEX Mission
+Launched on: December 30, 2024
+More on PSLV C60/SPADEX
+PSLV-C59/PROBA-3 Mission
+Launched on: December 05, 2024
+More on PSLV-C59/PROBA-3
+Autonomous bodies
+PRL
+NARL
+NESAC
+IIST
+ISRO
+                      Centres & Units
+IN-SPACe
+NSIL
+IN-SPACe
+NSIL
+Useful Links
+Related Links
+Government Portal
+Reports
+Policies
+All
+ISRO Centres
+INSPACE
+NSIL
+Autonomous bodies
+Archives
+Antariksh mein Atmanirbharata
+JanBhagidari
+National Voter's Service
+National Government Service
+CSSTEAP
+PIB
+7th CPC Pension Revision Status
+e-Saral Hindi Vakyakosh
+Procurement Live Register
+Tender Notices
+E-procurment New
+Press Release
+Publications
+Annual Report
+ISM Data Sheets
+Chandrayaan-2
+                Product documents
+Monthly Summary of DOS
+India's Space Policy
+Website Policy
+Address
+ISRO Headquarters, Antariksh Bhavan, New BEL Road
+Bengaluru-560 094
+Phone:
++91 80 22172294 / 96
+Email:
+isropr[at]isro[dot]gov[dot]in
+RTI
+Feedback
+Contact us
+FAQ
+Website Policy
+Copyright Policy
+Hyper Linking Policy
+Terms of Use
+Archives
+Web Information Manager
+Space Policy
+Parliament Questions
+PIB
+e-Saral Hindi Vakyakosh
+Related links
+Check Your 7th CPC Pension Revision Status
+Pensioners' Portal
+Site Map
+Help
+Last updated on :
+Sat Jul 05 2025 12:28:30 GMT+0530 (India Standard Time)
+© Copyright
+2023 ISRO
+. All Rights Reserved
+Designed by CITG/MSA VSSC/ISRO
+function popupDiv(id) {
+      document.getElementById("storyId").style.display = 'inline';
+    }
+    function popdownDiv() {
+
+      document.getElementById("storyId").style.display = 'none';
+    }
+    function podownDivTender() {
+      document.getElementById("tenderId").style.display = 'none';
+    }
+
+    function podownDivCareer() {
+      document.getElementById("careerId").style.display = 'none';
+    }
+
+    function podownDivStudents() {
+      document.getElementById("studentId").style.display = 'none';
+    }
+
+    function popupDivCareer(id) {
+      document.getElementById("storyId").style.display = 'none';
+      document.getElementById("careerId").style.display = 'inline';
+    }
+
+    function popupDivStudents(id) {
+      document.getElementById("careerId").style.display = 'none';
+      document.getElementById("studentId").style.display = 'inline';
+    }
+    function popupDivTender(id) {
+      document.getElementById("studentId").style.display = 'none';
+      document.getElementById("tenderId").style.display = 'inline';
+    }
+    function outsideAlert(url) {
+      if (confirm("You will be directed to an external website. Are you sure that you want to proceed?")) {
+        window.open(url, '_blank');
+      }
+    }
+    function outsideAlert1(event, url) {
+      if (event.keyCode === 13) {
+        if (confirm("You will be directed to an external website. Are you sure that you want to proceed?")) {
+          window.open(url, '_blank');
+        }
+      }
+    }
+    document.getElementById("pressrelease").addEventListener("keyup", function (event) {
+      if (event.keyCode === 13) {
+        if (document.getElementById("storyId").style.display === "none") {
+          popupDiv('storyId');
+          podownDivCareer();
+          podownDivStudents();
+          podownDivTender();
+        } else { popdownDiv(); }
+      }
+    });
+    document.getElementById("careercontent").addEventListener("keyup", function (event) {
+      if (event.keyCode === 13) {
+        if (document.getElementById("careerId").style.display === "none") {
+          popupDivCareer('careerId');
+          popdownDiv();
+          podownDivStudents();
+          podownDivTender();
+        } else { podownDivCareer(); }
+      }
+    });
+    document.getElementById("studentscontent").addEventListener("keyup", function (event) {
+      if (event.keyCode === 13) {
+        if (document.getElementById("studentId").style.display === "none") {
+          popupDivStudents('studentId');
+          popdownDiv();
+          podownDivCareer();
+          podownDivTender();
+        } else { podownDivStudents(); }
+      }
+    });
+    document.getElementById("tendercontent").addEventListener("keyup", function (event) {
+      if (event.keyCode === 13) {
+        if (document.getElementById("tenderId").style.display === "none") {
+          popupDivTender('tenderId');
+          popdownDiv();
+          podownDivCareer();
+          podownDivStudents();
+        } else { podownDivTender(); }
+      }
+    });

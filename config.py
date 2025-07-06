@@ -1,10 +1,9 @@
-# config.py
+import os
 
-SCREENSHOT_DIR = "output/screenshots"
-PARSED_OUTPUT_DIR = "output/parsed_content"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-PAGE_WIDTH = 1280
-PAGE_HEIGHT = 720
-WAIT_TIME = 3000  # milliseconds
+SCREENSHOT_DIR = os.path.join(BASE_DIR, "output", "screenshots")
+PARSED_OUTPUT_DIR = os.path.join(BASE_DIR, "output", "parsed")
+DOM_OUTPUT_DIR = os.path.join(BASE_DIR, "output", "dom_texts")
 
 DONUT_MODEL = "naver-clova-ix/donut-base-finetuned-docvqa"
