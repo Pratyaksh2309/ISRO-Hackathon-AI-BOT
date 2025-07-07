@@ -1,0 +1,7 @@
+[
+  ["Python", "is_a", "Programming Language"],
+  ["Python", "used_for", "Machine Learning"],
+  ["Neo4j", "stores", "Graphs"],
+  ["GPT", "developed_by", "OpenAI"],
+  ["Playwright", "renders", "Web Pages"]
+]
