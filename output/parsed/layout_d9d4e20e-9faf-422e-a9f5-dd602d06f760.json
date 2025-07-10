@@ -1,0 +1,99 @@
+{
+  "headings": [
+    {
+      "text": "NSIL",
+      "bbox": [
+        1134,
+        519,
+        1193,
+        535
+      ],
+      "conf": 91
+    },
+    {
+      "text": "NSIL",
+      "bbox": [
+        1118,
+        648,
+        1149,
+        659
+      ],
+      "conf": 91
+    }
+  ],
+  "buttons": [],
+  "menu_items": [
+    {
+      "text": "Autonomous",
+      "bbox": [
+        35,
+        518,
+        190,
+        534
+      ],
+      "conf": 96
+    },
+    {
+      "text": "IN-SPACe",
+      "bbox": [
+        1006,
+        519,
+        1125,
+        535
+      ],
+      "conf": 91
+    },
+    {
+      "text": "ca",
+      "bbox": [
+        994,
+        572,
+        1128,
+        611
+      ],
+      "conf": 66
+    },
+    {
+      "text": "PRL_||_NARL",
+      "bbox": [
+        42,
+        620,
+        143,
+        637
+      ],
+      "conf": 52
+    }
+  ],
+  "raw_text_blocks": [
+    {
+      "text": "Recent",
+      "bbox": [
+        15,
+        9,
+        96,
+        25
+      ],
+      "conf": 96
+    },
+    {
+      "text": "Updates",
+      "bbox": [
+        107,
+        8,
+        204,
+        29
+      ],
+      "conf": 96
+    },
+    {
+      "text": "bodies",
+      "bbox": [
+        199,
+        517,
+        279,
+        534
+      ],
+      "conf": 95
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+streamlit
+playwright
+tesseract
+pytesseract
+py2neo
+transformers
+torch
+langchain
+openai
+neo4j

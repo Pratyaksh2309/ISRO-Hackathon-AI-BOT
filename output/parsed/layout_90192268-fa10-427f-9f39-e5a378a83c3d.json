@@ -1,0 +1,390 @@
+{
+  "headings": [
+    {
+      "text": "PRESS",
+      "bbox": [
+        106,
+        203,
+        167,
+        215
+      ],
+      "conf": 96
+    },
+    {
+      "text": "RELEASE",
+      "bbox": [
+        176,
+        203,
+        259,
+        215
+      ],
+      "conf": 95
+    },
+    {
+      "text": "CAREERS",
+      "bbox": [
+        388,
+        203,
+        476,
+        215
+      ],
+      "conf": 96
+    },
+    {
+      "text": "ISRO",
+      "bbox": [
+        52,
+        397,
+        89,
+        409
+      ],
+      "conf": 94
+    },
+    {
+      "text": "ISS",
+      "bbox": [
+        521,
+        397,
+        545,
+        409
+      ],
+      "conf": 96
+    },
+    {
+      "text": "ISRO",
+      "bbox": [
+        17,
+        574,
+        79,
+        590
+      ],
+      "conf": 96
+    },
+    {
+      "text": "TENDERS",
+      "bbox": [
+        954,
+        203,
+        1043,
+        215
+      ],
+      "conf": 96
+    },
+    {
+      "text": "YOUNG",
+      "bbox": [
+        884,
+        347,
+        909,
+        354
+      ],
+      "conf": 79
+    },
+    {
+      "text": "SENTIST",
+      "bbox": [
+        912,
+        347,
+        949,
+        354
+      ],
+      "conf": 58
+    },
+    {
+      "text": "PROGRAMME",
+      "bbox": [
+        952,
+        347,
+        1001,
+        354
+      ],
+      "conf": 51
+    }
+  ],
+  "buttons": [
+    {
+      "text": "@m",
+      "bbox": [
+        5,
+        337,
+        92,
+        383
+      ],
+      "conf": 66
+    }
+  ],
+  "menu_items": [
+    {
+      "text": "STUDENTS",
+      "bbox": [
+        671,
+        203,
+        773,
+        215
+      ],
+      "conf": 95
+    },
+    {
+      "text": "Highlights",
+      "bbox": [
+        654,
+        290,
+        777,
+        311
+      ],
+      "conf": 96
+    },
+    {
+      "text": "International",
+      "bbox": [
+        51,
+        468,
+        154,
+        481
+      ],
+      "conf": 96
+    }
+  ],
+  "raw_text_blocks": [
+    {
+      "text": "Latest",
+      "bbox": [
+        32,
+        291,
+        105,
+        307
+      ],
+      "conf": 95
+    },
+    {
+      "text": "News",
+      "bbox": [
+        116,
+        291,
+        181,
+        307
+      ],
+      "conf": 90
+    },
+    {
+      "text": "conducts",
+      "bbox": [
+        98,
+        346,
+        169,
+        359
+      ],
+      "conf": 96
+    },
+    {
+      "text": "student",
+      "bbox": [
+        175,
+        346,
+        236,
+        359
+      ],
+      "conf": 96
+    },
+    {
+      "text": "interactions",
+      "bbox": [
+        256,
+        347,
+        335,
+        359
+      ],
+      "conf": 96
+    },
+    {
+      "text": "with",
+      "bbox": [
+        358,
+        346,
+        374,
+        359
+      ],
+      "conf": 93
+    },
+    {
+      "text": "Gaganyatri",
+      "bbox": [
+        381,
+        347,
+        464,
+        362
+      ],
+      "conf": 92
+    },
+    {
+      "text": "onboard",
+      "bbox": [
+        484,
+        346,
+        538,
+        359
+      ],
+      "conf": 90
+    },
+    {
+      "text": "conducts",
+      "bbox": [
+        95,
+        397,
+        164,
+        409
+      ],
+      "conf": 95
+    },
+    {
+      "text": "student",
+      "bbox": [
+        171,
+        397,
+        227,
+        409
+      ],
+      "conf": 96
+    },
+    {
+      "text": "interactions",
+      "bbox": [
+        233,
+        397,
+        322,
+        409
+      ],
+      "conf": 96
+    },
+    {
+      "text": "with",
+      "bbox": [
+        328,
+        397,
+        358,
+        409
+      ],
+      "conf": 93
+    },
+    {
+      "text": "Gaganyatri",
+      "bbox": [
+        364,
+        397,
+        446,
+        412
+      ],
+      "conf": 92
+    },
+    {
+      "text": "onboard",
+      "bbox": [
+        452,
+        397,
+        514,
+        409
+      ],
+      "conf": 96
+    },
+    {
+      "text": "Update",
+      "bbox": [
+        52,
+        449,
+        108,
+        465
+      ],
+      "conf": 94
+    },
+    {
+      "text": "on",
+      "bbox": [
+        114,
+        453,
+        133,
+        462
+      ],
+      "conf": 94
+    },
+    {
+      "text": "Microgravity",
+      "bbox": [
+        140,
+        450,
+        237,
+        465
+      ],
+      "conf": 95
+    },
+    {
+      "text": "Research",
+      "bbox": [
+        244,
+        449,
+        315,
+        462
+      ],
+      "conf": 96
+    },
+    {
+      "text": "Experiments",
+      "bbox": [
+        323,
+        450,
+        422,
+        465
+      ],
+      "conf": 94
+    },
+    {
+      "text": "onboard",
+      "bbox": [
+        428,
+        449,
+        492,
+        462
+      ],
+      "conf": 94
+    },
+    {
+      "text": "the",
+      "bbox": [
+        499,
+        449,
+        525,
+        462
+      ],
+      "conf": 97
+    },
+    {
+      "text": "Space",
+      "bbox": [
+        161,
+        469,
+        208,
+        484
+      ],
+      "conf": 96
+    },
+    {
+      "text": "Station",
+      "bbox": [
+        215,
+        469,
+        271,
+        481
+      ],
+      "conf": 96
+    },
+    {
+      "text": "Portals",
+      "bbox": [
+        89,
+        573,
+        174,
+        590
+      ],
+      "conf": 96
+    }
+  ]
+}

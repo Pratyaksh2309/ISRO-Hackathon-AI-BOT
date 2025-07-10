@@ -1,82 +1,202 @@
 {
-  "/gallery/wildlife-mammals/": {
-    "title": "Wildlife Mammals - NASA",
-    "url": "https://www.nasa.gov/gallery/wildlife-mammals/"
-  },
-  "/nasa-web-privacy-policy-and-important-notices/": {
-    "title": "NASA Web Privacy Policy and Important Notices - NASA",
-    "url": "https://www.nasa.gov/nasa-web-privacy-policy-and-important-notices/"
-  },
-  "/doing-business-with-nasa/": {
-    "title": "Doing Business with NASA - NASA",
-    "url": "https://www.nasa.gov/doing-business-with-nasa/"
-  },
-  "/manufacturing-and-materials/": {
-    "title": "Manufacturing and Materials - NASA",
-    "url": "https://www.nasa.gov/manufacturing-and-materials/"
-  },
-  "/gallery/wildlife-insects/": {
-    "title": "Wildlife Insects - NASA",
-    "url": "https://www.nasa.gov/gallery/wildlife-insects/"
-  },
-  "/people-of-nasa/": {
-    "title": "People of NASA - NASA",
-    "url": "https://www.nasa.gov/people-of-nasa/"
-  },
-  "/humans-in-space/commercial-space/": {
-    "title": "Commercial Space - NASA",
-    "url": "https://www.nasa.gov/humans-in-space/commercial-space/"
-  },
-  "/organization/": {
-    "title": "NASA Organization - NASA",
-    "url": "https://www.nasa.gov/organization/"
-  },
-  "/about/": {
-    "title": "About NASA - NASA",
-    "url": "https://www.nasa.gov/about/"
-  },
-  "/news/": {
-    "title": "NASA News",
-    "url": "https://www.nasa.gov/news/"
-  },
-  "/newsletters/": {
-    "title": "Newsletters - NASA",
-    "url": "https://www.nasa.gov/newsletters/"
-  },
-  "/wp-content/uploads/2025/07/pia26579.jpg": {
+  "/sites/default/files/docs/Onset%20Prediction%202024.pdf": {
     "title": "No title or header found",
-    "url": "https://www.nasa.gov/wp-content/uploads/2025/07/pia26579.jpg"
+    "url": "https://www.mosdac.gov.in/sites/default/files/docs/Onset%20Prediction%202024.pdf"
   },
-  "/es/": {
-    "title": "NASA en español - NASA",
-    "url": "https://www.nasa.gov/es/"
+  "/internal/catalog-satellite": {
+    "title": "Satellite Catalog",
+    "url": "https://www.mosdac.gov.in/internal/catalog-satellite"
   },
-  "/learning-resources/stem-engagement/": {
-    "title": "About STEM Engagement at NASA - NASA",
-    "url": "https://www.nasa.gov/learning-resources/stem-engagement/"
+  "/gallery/index.html": {
+    "title": "MOSDAC Gallery",
+    "url": "https://www.mosdac.gov.in/gallery/index.html"
   },
-  "/": {
-    "title": "NASA",
-    "url": "https://www.nasa.gov/"
+  "/soil-moisture-0": {
+    "title": "Soil Moisture | Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/soil-moisture-0"
   },
-  "/humans-in-space/destinations/": {
-    "title": "Destinations - NASA",
-    "url": "https://www.nasa.gov/humans-in-space/destinations/"
+  "/scatsat-1": {
+    "title": "SCATSAT-1 | Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/scatsat-1"
   },
-  "/aeronautics/pressure-sensitive-paint-2025/": {
-    "title": "NASA Advances Pressure Sensitive Paint Research Capability - NASA",
-    "url": "https://www.nasa.gov/aeronautics/pressure-sensitive-paint-2025/"
+  "/sitemap": {
+    "title": "Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/sitemap"
   },
-  "/images/": {
-    "title": "NASA Images - NASA",
-    "url": "https://www.nasa.gov/images/"
+  "/internal/weather": {
+    "title": "Weather Forecast",
+    "url": "https://www.mosdac.gov.in/internal/weather"
   },
-  "/apps/": {
-    "title": "Mobile and Desktop Apps - NASA",
-    "url": "https://www.nasa.gov/apps/"
+  "/internal/heat-cold-wave": {
+    "title": "No title or header found",
+    "url": "https://www.mosdac.gov.in/internal/heat-cold-wave"
   },
-  "/learning-resources/for-educators/": {
-    "title": "For Educators - NASA",
-    "url": "https://www.nasa.gov/learning-resources/for-educators/"
+  "/terms-conditions": {
+    "title": "Terms & Conditions | Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/terms-conditions"
+  },
+  "/hyperlink-policy": {
+    "title": "Hyperlink Policy | Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/hyperlink-policy"
+  },
+  "/sea-ice-occurrence-probability": {
+    "title": "Sea Ice Occurrence Probability | Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/sea-ice-occurrence-probability"
+  },
+  "/atlases": {
+    "title": "Atlases | Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/atlases"
+  },
+  "/sites/default/files/docs/Onset%20Prediction%202023.pdf": {
+    "title": "No title or header found",
+    "url": "https://www.mosdac.gov.in/sites/default/files/docs/Onset%20Prediction%202023.pdf"
+  },
+  "/internal/catalog-radar": {
+    "title": "Radar Catalog",
+    "url": "https://www.mosdac.gov.in/internal/catalog-radar"
+  },
+  "/internal/nowcast-heavyrain": {
+    "title": "No title or header found",
+    "url": "https://www.mosdac.gov.in/internal/nowcast-heavyrain"
+  },
+  "/internal/registration": {
+    "title": "Welcome to MOSDAC",
+    "url": "https://www.mosdac.gov.in/internal/registration"
+  },
+  "/3d-volumetric-terls-dwrproduct": {
+    "title": "3D Volumetric TERLS DWRproduct | Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/3d-volumetric-terls-dwrproduct"
+  },
+  "/calibration-reports": {
+    "title": "Relative | Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/calibration-reports"
+  },
+  "/internal/gallery/weather": {
+    "title": "MOSDAC Weather Gallery",
+    "url": "https://www.mosdac.gov.in/internal/gallery/weather"
+  },
+  "/internal/gallery": {
+    "title": "MOSDAC Gallery",
+    "url": "https://www.mosdac.gov.in/internal/gallery"
+  },
+  "/internal/energy": {
+    "title": "Solar & Wind Forecast Portal",
+    "url": "https://www.mosdac.gov.in/internal/energy"
+  },
+  "/internal/gallery/dwr": {
+    "title": "MOSDAC Weather Gallery",
+    "url": "https://www.mosdac.gov.in/internal/gallery/dwr"
+  },
+  "/privacy-policy": {
+    "title": "Privacy Policy | Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/privacy-policy"
+  },
+  "/internal/eddy": {
+    "title": "No title or header found",
+    "url": "https://www.mosdac.gov.in/internal/eddy"
+  },
+  "/internal/sea-state-forecast": {
+    "title": "MOSDAC Weather Gallery",
+    "url": "https://www.mosdac.gov.in/internal/sea-state-forecast"
+  },
+  "/insat-3ds": {
+    "title": "INSAT-3DS | Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/insat-3ds"
+  },
+  "/insat-3dr": {
+    "title": "INSAT-3DR | Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/insat-3dr"
+  },
+  "/help": {
+    "title": "Help | Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/help"
+  },
+  "/data-access-policy": {
+    "title": "Data Access Policy | Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/data-access-policy"
+  },
+  "/internal/event-heavyrain": {
+    "title": "No title or header found",
+    "url": "https://www.mosdac.gov.in/internal/event-heavyrain"
+  },
+  "/internal/ocean": {
+    "title": "MOSDAC Live",
+    "url": "https://www.mosdac.gov.in/internal/ocean"
+  },
+  "/internal/urja": {
+    "title": "MOSDAC Live",
+    "url": "https://www.mosdac.gov.in/internal/urja"
+  },
+  "/oceansat-2": {
+    "title": "Oceansat-2 | Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/oceansat-2"
+  },
+  "/internal/aws": {
+    "title": "AWS",
+    "url": "https://www.mosdac.gov.in/internal/aws"
+  },
+  "/insat-3a": {
+    "title": "INSAT-3A | Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/insat-3a"
+  },
+  "/internal/oilspill": {
+    "title": "No title or header found",
+    "url": "https://www.mosdac.gov.in/internal/oilspill"
+  },
+  "/internal/nowcast-cloudburst": {
+    "title": "No title or header found",
+    "url": "https://www.mosdac.gov.in/internal/nowcast-cloudburst"
+  },
+  "/weather-reports": {
+    "title": "Weather | Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/weather-reports"
+  },
+  "/internal/gallery/current": {
+    "title": "MOSDAC Ocean Current Gallery",
+    "url": "https://www.mosdac.gov.in/internal/gallery/current"
+  },
+  "/internal/coldwave": {
+    "title": "No title or header found",
+    "url": "https://www.mosdac.gov.in/internal/coldwave"
+  },
+  "/internal/afs-seac": {
+    "title": "Alerts & Forewarning",
+    "url": "https://www.mosdac.gov.in/internal/afs-seac"
+  },
+  "/faq-page": {
+    "title": "Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/faq-page"
+  },
+  "/internal/catalog-insitu": {
+    "title": "In-situ Catalog",
+    "url": "https://www.mosdac.gov.in/internal/catalog-insitu"
+  },
+  "/bayesian-based-mt-saphir-rainfall": {
+    "title": "Bayesian based MT-SAPHIR rainfall | Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/bayesian-based-mt-saphir-rainfall"
+  },
+  "/global-ocean-surface-current": {
+    "title": "Global Ocean Surface Current | Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/global-ocean-surface-current"
+  },
+  "/internal/monsoon": {
+    "title": "No title or header found",
+    "url": "https://www.mosdac.gov.in/internal/monsoon"
+  },
+  "/node": {
+    "title": "Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/node"
+  },
+  "/rss-feed": {
+    "title": "RSS Feed | Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/rss-feed"
+  },
+  "/announcements": {
+    "title": "Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/announcements"
+  },
+  "/contact-us": {
+    "title": "Contact | Meteorological & Oceanographic Satellite Data Archival Centre",
+    "url": "https://www.mosdac.gov.in/contact-us"
   }
 }

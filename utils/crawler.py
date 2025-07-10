@@ -11,7 +11,7 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 from playwright.sync_api import sync_playwright
 from urllib.parse import urljoin, urlparse
 
-def get_internal_links_playwright(base_url, max_scrolls=10, scroll_pause=1.5):
+def get_internal_links_playwright(base_url, max_scrolls=1000, scroll_pause=1.5):
     internal_links = set()
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -64,7 +64,7 @@ def extract_page_title_or_header(url):
 
 
 def build_site_map(base_url, limit=25):
-    internal_links = get_internal_links_playwright(base_url, max_scrolls=10)
+    internal_links = get_internal_links_playwright(base_url, max_scrolls=1000)
 
     site_map = {}
 
