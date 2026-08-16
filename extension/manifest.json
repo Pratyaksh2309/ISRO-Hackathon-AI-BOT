@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Universal Chatbot",
+  "version": "1.0",
+  "description": "Local agentic assistant for any website",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "http://127.0.0.1:8000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Open Universal Chatbot"
+  },
+  "web_accessible_resources": [
+  {
+    "resources": ["assets/meow.mp3"],
+    "matches": ["<all_urls>"]
+  }
+],
+  "content_scripts": [
+    {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+    }
+]
+}

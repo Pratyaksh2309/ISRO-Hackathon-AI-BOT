@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+ollama
+numpy
+neo4j
+playwright
+pytesseract
+Pillow
+transformers
+sentencepiece
+torch
+python-dotenv
